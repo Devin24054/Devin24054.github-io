@@ -1,29 +1,48 @@
 <!DOCTYPE html>
-<html>
-    <head>
-        <meta charset="UTF-8">
-        <meta name="apple-mobile-web-app-capable" content="yes">
-        <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
-        <meta name="viewport" content="user-scalable=no">
-        <link rel="icon" href="icon/icon.png" type="image/png">
-        <link rel="apple-touch-icon" href="icon/icon.png">
-        <link rel="stylesheet" type="text/css" href="fonts/gamefont.css">
-        <title>Get to school 2</title>
-    </head>
-    <body style="background-color: black">
-        <script type="text/javascript" src="js/libs/pixi.js"></script>
-        <script type="text/javascript" src="js/libs/pixi-tilemap.js"></script>
-        <script type="text/javascript" src="js/libs/pixi-picture.js"></script>
-        <script type="text/javascript" src="js/libs/fpsmeter.js"></script>
-        <script type="text/javascript" src="js/libs/lz-string.js"></script>
-        <script type="text/javascript" src="js/libs/iphone-inline-video.browser.js"></script>
-        <script type="text/javascript" src="js/rpg_core.js"></script>
-        <script type="text/javascript" src="js/rpg_managers.js"></script>
-        <script type="text/javascript" src="js/rpg_objects.js"></script>
-        <script type="text/javascript" src="js/rpg_scenes.js"></script>
-        <script type="text/javascript" src="js/rpg_sprites.js"></script>
-        <script type="text/javascript" src="js/rpg_windows.js"></script>
-        <script type="text/javascript" src="js/plugins.js"></script>
-        <script type="text/javascript" src="js/main.js"></script>
-    </body>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Get to school 2</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+  <div id="content">
+    <div id="headerBox">
+      <h1>Thumbspanel</h1>
+      <p id="phrasePara"></p>
+    </div>
+    <div class="linksBox">
+      <p><a href="http://172.21.3.4:5000/tutd?thumb=up">UP</a></p>
+      <p><a href="http://172.21.3.4:5000/tutd?thumb=wiggle">WIGGLE</a></p>
+      <p><a href="http://172.21.3.4:5000/tutd?thumb=down">DOWN</a></p>
+    </div>
+    <div class="textBox">
+      <img class="f-left" src="img\walrus.jpg" alt=" A Walrus" />
+      <p>Hello, this is a walrus. Don't mind him.</p>
+      <img class="f-right" src="img/mombkey.jpg" alt="mombkey">
+      <p>this is mombkey.</p>
+      <img class="f-left" src="img/images.jpg" alt="baboon">
+      <p>This is a baby baboon.</p>
+    </div>
+    <div class="linksBox">
+      <a href="http://172.21.3.4:5000/perc?amount=2">Bar Percentage</a>
+      <p><a href="http://172.21.3.4:5000/color?hex=9932CC">Purple Lol</a></p>
+      <a href="http://172.21.3.4:5000/say?phrase=Bye bye">Bye Bye</a>
+      <p><a href="http://172.21.3.4:5000/bgmstop">Stop the music</a></p>
+      <a href="game.html">My Game</a>
+    </div>
+  </div>
+  <script type="text/javascript">
+  var phraseList = ['sword', 'pickaxe', 'shovel', 'cure for cancer']
+  var Lol = Math.random() * 4
+  Lol = Math.floor(Lol)
+  var phrasePara = document.getElementById('phrasePara')
+  phrasePara.innerHTML = phraseList[Lol]
+
+</script>
+</body>
+
 </html>
